@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>First and last letter to Uppercase</title>
+    </head>
+    <body>
+        <p id="para"></p>
+        <script>
+            var str = prompt("Enter any string : ");
+            var len = str.length;
+            str = str.replace(str.charAt(0),str.charAt(0).toUpperCase());
+            str = str.replace(str.charAt(len-1),str.charAt(len-1).toUpperCase());
+            document.getElementById("para").innerText = str;
+        </script>
+    </body>
+</html>
